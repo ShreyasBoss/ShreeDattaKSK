@@ -1,0 +1,51 @@
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.EditInvoice.resources
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.Form1.resources
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.NewInvoice.resources
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.Properties.Resources.resources
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.GenerateResource.cache
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csprojAssemblyReference.cache
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe.config
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.pdb
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.exe
+C:\Users\User\source\repos\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.pdb
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBook.accdb
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe.config
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.pdb
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.ResolveComReference.cache
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.EditInvoice.resources
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.PaymentDetails.resources
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.Form1.resources
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.NewInvoice.resources
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.Properties.Resources.resources
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.TableForm.resources
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.GenerateResource.cache
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.CoreCompileInputs.cache
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.exe
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.pdb
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe.manifest
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.application
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.exe.manifest
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.application
+G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csprojAssemblyReference.cache
+F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBook.accdb
+F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe.config
+F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe.manifest
+F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.application
+F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe
+F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.pdb
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.ResolveComReference.cache
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.EditInvoice.resources
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.PaymentDetails.resources
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.Form1.resources
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.NewInvoice.resources
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.Properties.Resources.resources
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.TableForm.resources
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.GenerateResource.cache
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.CoreCompileInputs.cache
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.exe.manifest
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.application
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.exe
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.pdb
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.AssemblyReference.cache

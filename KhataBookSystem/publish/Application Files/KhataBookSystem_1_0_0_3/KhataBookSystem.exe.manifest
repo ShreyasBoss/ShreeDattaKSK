@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="KhataBookSystem.exe" version="1.0.0.3" publicKeyToken="339039d4b16be11b" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="aaIcon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="KhataBookSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="KhataBookSystem.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KhataBookSystem.exe" size="1714088">
+      <assemblyIdentity name="KhataBookSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>R0OCLrN6oZDNbvfGeGSNVc17MjOuo/vq1qyCbv1LCB8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="aaIcon.ico" size="232604">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XNjlfa5PwyFrTYlZTpmPNn91bOWWaFIKbyx3VxeKtpM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="KhataBook.accdb" size="868352" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Epu9f/jI8/F3qZTMXX+KWNLa1OlGXSds1T0LHjTfDL0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="KhataBookSystem.exe.config" size="368">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LecNlPh5rWW6zVSZDngzUyb1MYA58rqKoX569TptqFI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=STARK\prati" issuerKeyHash="6a3df1fae032ceac3c63397590d8ca05765b2196" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>O3QSYsoezojs0NIcsvG6H7M1a8RZ26AlqEIFktsYsOc=</DigestValue></Reference></SignedInfo><SignatureValue>hMfkVC0vJH00vaEV4I7lbujpyuim4WmeXbAIY0CWOmdWGhbpfoCzicTiE0qSQSfffc2UIMwY6CHqGdJG/1Jy3xgSDbQoVI4ZiOy7UZBZQnbS8nbUYEe+At+Eju6glOPvu72QuMF5V+JAtmtkj43yJu79pnD7hV3jgvKRXnEwpt8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1hLPxiKOnbQWahZDYazJDE7etEpwpIHavqTBWC1NgTX/yMamM2f6guRn7+oRjYoCNE4V9QUmwqGtcV7gQpy528lQm6XjPxYPr71nBo/H1lmWQkEyY+J7/H99ZJcBMGAfqiG6KpGiVVo2d7fgmTttWea3NrXl2HzT775hexmuEqU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e7b018db920542a825a0db59c46b35b31fbaf1b21cd2d0ec88ce1eca6212743b" Description="" Url=""><as:assemblyIdentity name="KhataBookSystem.exe" version="1.0.0.3" publicKeyToken="339039d4b16be11b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=STARK\prati</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>0cml6RmXp65o6oqEtbx9qZuHFXsJ/sVx1aRNr6E3xjs=</DigestValue></Reference></SignedInfo><SignatureValue>fV3m/etblxFT5GoM0k9EZLVlsjcNQJzGUpze9RtNFvAQpSVZk91IOkeTirzaIGdLgd6yQ3fFE7KgeUOa2T/cX5dRY5eFuWt6mGhcJB91gx+hz6lBsN8Pxs8VFVWoStcYbD0vR4j/T4FNmKAGLk1D5hhcuq8/ZRXTxvZC2sB9dy8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1hLPxiKOnbQWahZDYazJDE7etEpwpIHavqTBWC1NgTX/yMamM2f6guRn7+oRjYoCNE4V9QUmwqGtcV7gQpy528lQm6XjPxYPr71nBo/H1lmWQkEyY+J7/H99ZJcBMGAfqiG6KpGiVVo2d7fgmTttWea3NrXl2HzT775hexmuEqU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQZE+D6I4J461Jp6G+bMT4CDANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYAUwBUAEEAUgBLAFwAcAByAGEAdABpMB4XDTIwMTAyMzE2NTUyNloXDTIxMTAyMzIyNTUyNlowITEfMB0GA1UEAx4WAFMAVABBAFIASwBcAHAAcgBhAHQAaTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA1hLPxiKOnbQWahZDYazJDE7etEpwpIHavqTBWC1NgTX/yMamM2f6guRn7+oRjYoCNE4V9QUmwqGtcV7gQpy528lQm6XjPxYPr71nBo/H1lmWQkEyY+J7/H99ZJcBMGAfqiG6KpGiVVo2d7fgmTttWea3NrXl2HzT775hexmuEqUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQC649wunzs/Pta4zLU4LMf5WFTI9ObZzz1FT3/UEJu/kmZetZ0OO6eUO/f26sFCm1d4z+qaKSvvDOrygRV8Q+6Wg4s8xbUkdOqYEc1QWL396w+ntRb9jw13KbkfeYD430ffW/AY9vhE/2CGz9nBjFf2aen85utDNj8jegc6R/nlbQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
