@@ -39,14 +39,13 @@
             this.btncheck = new System.Windows.Forms.Button();
             this.grdBill = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dbill = new System.Windows.Forms.DateTimePicker();
+            this.ddcutomer = new System.Windows.Forms.ComboBox();
+            this.btnCustomer = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.txtbillno = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
-            this.Label8 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -62,7 +61,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1139, 641);
+            this.panel1.Size = new System.Drawing.Size(1049, 641);
             this.panel1.TabIndex = 17;
             // 
             // panel3
@@ -72,7 +71,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1139, 553);
+            this.panel3.Size = new System.Drawing.Size(1049, 553);
             this.panel3.TabIndex = 1;
             // 
             // panel4
@@ -82,7 +81,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 497);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1139, 56);
+            this.panel4.Size = new System.Drawing.Size(1049, 56);
             this.panel4.TabIndex = 4;
             // 
             // button1
@@ -140,34 +139,49 @@
             this.grdBill.Name = "grdBill";
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             this.grdBill.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.grdBill.Size = new System.Drawing.Size(1139, 553);
+            this.grdBill.Size = new System.Drawing.Size(1049, 553);
             this.grdBill.TabIndex = 3;
             this.grdBill.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grdBill_CellMouseClick);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dbill);
+            this.panel2.Controls.Add(this.ddcutomer);
+            this.panel2.Controls.Add(this.btnCustomer);
             this.panel2.Controls.Add(this.btncancel);
+            this.panel2.Controls.Add(this.Label2);
             this.panel2.Controls.Add(this.btnsave);
             this.panel2.Controls.Add(this.txtbillno);
-            this.panel2.Controls.Add(this.txtName);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.Label1);
-            this.panel2.Controls.Add(this.Label8);
-            this.panel2.Controls.Add(this.Label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1139, 88);
+            this.panel2.Size = new System.Drawing.Size(1049, 88);
             this.panel2.TabIndex = 0;
             // 
-            // dbill
+            // ddcutomer
             // 
-            this.dbill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dbill.Location = new System.Drawing.Point(668, 49);
-            this.dbill.Name = "dbill";
-            this.dbill.Size = new System.Drawing.Size(200, 26);
-            this.dbill.TabIndex = 116;
+            this.ddcutomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddcutomer.FormattingEnabled = true;
+            this.ddcutomer.Location = new System.Drawing.Point(305, 52);
+            this.ddcutomer.Name = "ddcutomer";
+            this.ddcutomer.Size = new System.Drawing.Size(247, 28);
+            this.ddcutomer.TabIndex = 136;
+            // 
+            // btnCustomer
+            // 
+            this.btnCustomer.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnCustomer.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomer.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnCustomer.Location = new System.Drawing.Point(845, 53);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(188, 29);
+            this.btnCustomer.TabIndex = 117;
+            this.btnCustomer.Text = " NEW CUSTOMER";
+            this.btnCustomer.UseVisualStyleBackColor = false;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // btncancel
             // 
@@ -176,7 +190,7 @@
             this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncancel.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancel.ForeColor = System.Drawing.Color.White;
-            this.btncancel.Location = new System.Drawing.Point(962, 48);
+            this.btncancel.Location = new System.Drawing.Point(676, 53);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(163, 29);
             this.btncancel.TabIndex = 115;
@@ -191,7 +205,7 @@
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsave.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
-            this.btnsave.Location = new System.Drawing.Point(874, 47);
+            this.btnsave.Location = new System.Drawing.Point(575, 53);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(82, 29);
             this.btnsave.TabIndex = 114;
@@ -202,24 +216,16 @@
             // txtbillno
             // 
             this.txtbillno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbillno.Location = new System.Drawing.Point(421, 50);
+            this.txtbillno.Location = new System.Drawing.Point(87, 55);
             this.txtbillno.Name = "txtbillno";
             this.txtbillno.Size = new System.Drawing.Size(121, 26);
             this.txtbillno.TabIndex = 110;
-            // 
-            // txtName
-            // 
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(86, 50);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(247, 26);
-            this.txtName.TabIndex = 108;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(339, 49);
+            this.label5.Location = new System.Drawing.Point(5, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 22);
             this.label5.TabIndex = 107;
@@ -229,27 +235,17 @@
             // 
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(425, 0);
+            this.Label1.Location = new System.Drawing.Point(365, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(330, 39);
             this.Label1.TabIndex = 106;
             this.Label1.Text = "Shridatta KSK, Umadi";
             // 
-            // Label8
-            // 
-            this.Label8.AutoSize = true;
-            this.Label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label8.Location = new System.Drawing.Point(548, 49);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(123, 22);
-            this.Label8.TabIndex = 105;
-            this.Label8.Text = "Date Of Bill  : ";
-            // 
             // Label2
             // 
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(12, 50);
+            this.Label2.Location = new System.Drawing.Point(231, 55);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(68, 22);
             this.Label2.TabIndex = 103;
@@ -262,7 +258,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1139, 641);
+            this.ClientSize = new System.Drawing.Size(1049, 641);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -284,19 +280,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DateTimePicker dbill;
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.TextBox txtbillno;
-        private System.Windows.Forms.TextBox txtName;
         internal System.Windows.Forms.Label label5;
         internal System.Windows.Forms.Label Label1;
-        internal System.Windows.Forms.Label Label8;
         internal System.Windows.Forms.Label Label2;
         private System.Windows.Forms.DataGridView grdBill;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btncheck;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCustomer;
+        private System.Windows.Forms.ComboBox ddcutomer;
     }
 }
 

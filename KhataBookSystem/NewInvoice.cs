@@ -14,7 +14,7 @@ namespace KhataBookSystem
     public partial class NewInvoice : Form
     {
         private readonly Form1 form;
-        string dateofcredit = "";
+  
         public NewInvoice(Form1 f)
         {
             InitializeComponent();
@@ -30,10 +30,10 @@ namespace KhataBookSystem
 
 
               
-                if (txtName.Text == string.Empty)
+                if (ddcutomer.Text == string.Empty)
                 {
                     MessageBox.Show("PLEASE ENTER NAME", "M E S S A G E", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtName.Focus();
+                    ddcutomer.Focus();
                     
                 }
                 else if (txtbillno.Text == string.Empty)
@@ -60,7 +60,7 @@ namespace KhataBookSystem
                    
                  
 
-                    userInterface.Name = txtName.Text;
+                    userInterface.CustomerID = Convert.ToInt32(ddcutomer.SelectedValue);
                     userInterface.billno = txtbillno.Text;
                     userInterface.AmountPriceList = Convert.ToDouble(txtamount.Text);
                     userInterface.intrest = Convert.ToDouble(txtinterst.Text);
@@ -153,6 +153,19 @@ namespace KhataBookSystem
             calculateInterst();
         }
 
-    
+        private void NewInvoice_Load(object sender, EventArgs e)
+        {
+            getCustomerForDD();
+
+        }
+        public void getCustomerForDD()
+        {
+            BussinessLogic bl = BussinessLogic.GetInstance;
+            DataTable dt = new DataTable();
+            dt = bl.getCustomerDD();
+            ddcutomer.DataSource = dt;
+            ddcutomer.DisplayMember = "Name";
+            ddcutomer.ValueMember = "Id";
+        }
     }
 }

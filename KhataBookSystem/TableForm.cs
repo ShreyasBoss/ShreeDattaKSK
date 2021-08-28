@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
-using System.Data.OleDb;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,8 +17,8 @@ namespace KhataBookSystem
     {
         DataTable dt = new DataTable();
         Double days;
-        OleDbCommand cmd = new OleDbCommand();
-        OleDbConnection con;
+        SqlCommand cmd = new SqlCommand();
+        SqlConnection con;
         BussinessLogic bl = BussinessLogic.GetInstance;
         UserInterface ui = UserInterface.GetInstance;
         DataSet ds = new DataSet();
@@ -32,7 +32,7 @@ namespace KhataBookSystem
         private void TableForm_Load(object sender, EventArgs e)
         {
             getdata();
-            con = new OleDbConnection(ConfigurationManager.ConnectionStrings["DBCS"].ToString());
+            con = new SqlConnection(ConfigurationManager.ConnectionStrings["DBCS"].ToString());
             cmd.Connection = con;
           
 
@@ -52,17 +52,17 @@ namespace KhataBookSystem
                 try
                 {
                     ui.CreditDate = DateTime.Now.Date;
-                    cmd.CommandText = "select * from Payment_Master where CreditDate=?";
+                    cmd.CommandText = "select cm.Name,pm.BillDate,pm.BillNo,pm.Interest,pm.Amount,pm.CreditDate,pm.TotalInterestAmount,pm.Totalamount,pm.RemainingAmount from Payment_Master as pm,Customer_Master as cm where pm.Name = cm.Id and pm.CreditDate=@Creditdate";
                     cmd.Parameters.AddWithValue("@Creditdate", ui.CreditDate);
-                    OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(ds);
                     foreach (DataRow row in ds.Tables[0].Rows)
                     {
-                        ui.ReamingAmount = Convert.ToDouble(row["Reamingamount"].ToString());
+                        ui.ReamingAmount = Convert.ToDouble(row["RemainingAmount"].ToString());
                         ui.Totalamount = Convert.ToDouble(row["Totalamount"].ToString());
                         ui.CreditDate = Convert.ToDateTime(row["CreditDate"].ToString()).Date;
                         ui.billdate = Convert.ToDateTime(row["BillDate"].ToString()).Date;
-                        ui.TotalInterstAmount = Convert.ToDouble(row["TotalInterstAmount"].ToString());
+                        ui.TotalInterstAmount = Convert.ToDouble(row["TotalInterestAmount"].ToString());
                         ui.billno = row["BillNo"].ToString();
                         Double paidamount = ui.Totalamount - ui.ReamingAmount;
                         ui.Totalamount = ui.ReamingAmount + ui.TotalInterstAmount;
@@ -71,7 +71,7 @@ namespace KhataBookSystem
                         days = (ui.CreditDate - ui.billdate).TotalDays;
                         ui.CreditDate = ui.CreditDate.AddDays(days).Date;
                         ui.billdate = DateTime.Now.Date;
-                        OleDbCommand cmd2 = new OleDbCommand("UPDATE Payment_Master SET Amount = @amount, CreditDate = @creditdate, BillDate = @billingdate, Totalamount = @amount, RemainingAmount=@reamingamount  where BillNo = @billno", con);
+                        SqlCommand cmd2 = new SqlCommand("UPDATE Payment_Master SET Amount = @amount, CreditDate = @creditdate, BillDate = @billingdate, Totalamount = @amount, RemainingAmount=@reamingamount  where BillNo = @billno", con);
                         cmd2.Parameters.AddWithValue("@amount", ui.Totalamount);
                         cmd2.Parameters.AddWithValue("@creditdate", ui.CreditDate);
                         cmd2.Parameters.AddWithValue("@billingdate", ui.billdate);

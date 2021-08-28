@@ -83,7 +83,7 @@
             this.btncheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncheck.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncheck.ForeColor = System.Drawing.Color.White;
-            this.btncheck.Location = new System.Drawing.Point(521, 10);
+            this.btncheck.Location = new System.Drawing.Point(462, 10);
             this.btncheck.Name = "btncheck";
             this.btncheck.Size = new System.Drawing.Size(228, 29);
             this.btncheck.TabIndex = 118;

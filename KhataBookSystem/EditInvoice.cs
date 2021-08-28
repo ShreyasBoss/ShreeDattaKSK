@@ -26,6 +26,16 @@ namespace KhataBookSystem
         private void EditInvoice_Load(object sender, EventArgs e)
         {
             getdataForUpdate();
+            getCustomerForDD();
+        }
+        public void getCustomerForDD()
+        {
+            BussinessLogic bl = BussinessLogic.GetInstance;
+            DataTable dt = new DataTable();
+            dt = bl.getCustomerDD();
+            ddcutomer.DataSource = dt;
+            ddcutomer.DisplayMember = "Name";
+            ddcutomer.ValueMember = "Id";
         }
         public void getdataForUpdate()
         {
@@ -36,7 +46,7 @@ namespace KhataBookSystem
             {
                 dt = businessLogic.getManageInvoice(userInterface);
                 txtbillno.Text = dt.Rows[0][1].ToString();
-                txtName.Text = dt.Rows[0][2].ToString();
+                ddcutomer.SelectedValue = dt.Rows[0][2].ToString();
                 txtinterst.Text = dt.Rows[0][3].ToString();
                 dpbill.Value = Convert.ToDateTime(dt.Rows[0][4]);
                 txtamount.Text = dt.Rows[0][5].ToString();
@@ -159,7 +169,7 @@ namespace KhataBookSystem
         {
 
             txtbillno.Enabled = true;
-            txtName.Enabled = true;
+            ddcutomer.Enabled = true;
             txtamount.Enabled = true;
             txtinterst.Enabled = true;
           
@@ -260,10 +270,10 @@ namespace KhataBookSystem
 
 
 
-                if (txtName.Text == string.Empty)
+                if (ddcutomer.Text == string.Empty)
                 {
                     MessageBox.Show("PLEASE ENTER NAME", "M E S S A G E", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtName.Focus();
+                    ddcutomer.Focus();
 
                 }
                 else if (txtbillno.Text == string.Empty)
@@ -284,7 +294,7 @@ namespace KhataBookSystem
                    
 
 
-                    userInterface.Name = txtName.Text;
+                    userInterface.CustomerID = Convert.ToInt32(ddcutomer.SelectedValue);
                     userInterface.billno = txtbillno.Text;
                     userInterface.AmountPriceList = Convert.ToDouble(txtamount.Text);
                     userInterface.intrest = Convert.ToDouble(txtinterst.Text);
@@ -292,6 +302,7 @@ namespace KhataBookSystem
                     userInterface.Totalamount = Convert.ToDouble(totalAmount);
                     userInterface.billdate = dpbill.Value.Date;
                     userInterface.CreditDate = dpcredit.Value.Date;
+                    userInterface.ReamingAmount = Convert.ToDouble(totalAmount);
                
 
 
@@ -407,6 +418,22 @@ namespace KhataBookSystem
             totalInterst = (Convert.ToDouble(Interst) * Convert.ToDouble(month)).ToString("N2");
              totalAmount = (Convert.ToDouble(totalInterst) + Convert.ToDouble(txtamount.Text)).ToString("N2");
           
+        }
+
+        private void dpbill_ValueChanged(object sender, EventArgs e)
+        {
+            if (txtinterst.Enabled == true)
+            {
+                calculateInterst();
+            }
+        }
+
+        private void dpcredit_ValueChanged(object sender, EventArgs e)
+        {
+            if (txtinterst.Enabled == true)
+            {
+                calculateInterst();
+            }
         }
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhataBookSystem", "KhataBookSystem\KhataBookSystem.csproj", "{7187DD6D-F2DF-472A-A4E3-DB1422AED80E}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AJ Khatabook Setup", "AJ Khatabook Setup\AJ Khatabook Setup.vdproj", "{660EFE5A-F94F-42C2-9559-78A94F1EDBE5}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ShreeDattaKSK", "ShreeDattaKSK\ShreeDattaKSK.vdproj", "{8093ADC3-0432-4B21-A53E-1D3F891A8BAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{7187DD6D-F2DF-472A-A4E3-DB1422AED80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7187DD6D-F2DF-472A-A4E3-DB1422AED80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7187DD6D-F2DF-472A-A4E3-DB1422AED80E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{660EFE5A-F94F-42C2-9559-78A94F1EDBE5}.Debug|Any CPU.ActiveCfg = Release
-		{660EFE5A-F94F-42C2-9559-78A94F1EDBE5}.Release|Any CPU.ActiveCfg = Release
+		{8093ADC3-0432-4B21-A53E-1D3F891A8BAC}.Debug|Any CPU.ActiveCfg = Debug
+		{8093ADC3-0432-4B21-A53E-1D3F891A8BAC}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

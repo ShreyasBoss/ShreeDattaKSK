@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KhataBookSystem.exe" size="1714600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KhataBookSystem.exe" size="1822632">
       <assemblyIdentity name="KhataBookSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ajgjTqyQTTtvvLneOQNwK9Vv1YcFjnr6HWKnEMVsQI4=</dsig:DigestValue>
+        <dsig:DigestValue>0TDPheYDpTnrYjAIPfjIVtSEiuQur+sO2lT+Hm7s7bw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,22 +63,31 @@
       <dsig:DigestValue>XNjlfa5PwyFrTYlZTpmPNn91bOWWaFIKbyx3VxeKtpM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="KhataBook.accdb" size="868352" writeableType="applicationData">
+  <file name="KhataBookSystem.exe.config" size="527">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>cOrQ5jHAhfM+DXX2GYT0GYYrNs12KOxnGXM1EbG/pc4=</dsig:DigestValue>
+      <dsig:DigestValue>61ayzetVQjrQgTBv6r2CJB2aFobwA0xYvt6DnCgB524=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="KhataBookSystem.exe.config" size="482">
+  <file name="ShreeDattaKSK.mdf" size="8388608" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>X/We512Tc4dCkBnNHEXRuB2ZXUNOEbHF24b5bhUyteg=</dsig:DigestValue>
+      <dsig:DigestValue>motwsqesZpAigVY9JwR4enqf7cXoEq3ywjbkTauMvhw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ShreeDattaKSK_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0shGu+1ZJNGEG/VacxWaRB/5ojkdUJNRFkIfwPTIa2s=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

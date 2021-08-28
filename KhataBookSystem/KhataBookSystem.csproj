@@ -83,11 +83,22 @@
   <ItemGroup>
     <Compile Include="App_Code\BussinessLogic.cs" />
     <Compile Include="App_Code\UserInterface.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EditInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditInvoice.Designer.cs">
       <DependentUpon>EditInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCustomer.Designer.cs">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="PaymentDetails.cs">
       <SubType>Form</SubType>
@@ -118,6 +129,9 @@
     <EmbeddedResource Include="EditInvoice.resx">
       <DependentUpon>EditInvoice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewCustomer.resx">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PaymentDetails.resx">
       <DependentUpon>PaymentDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +153,17 @@
     <EmbeddedResource Include="TableForm.resx">
       <DependentUpon>TableForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -195,8 +220,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aaIcon.ico" />
-    <Content Include="KhataBook.accdb">
+    <Content Include="ShreeDattaKSK.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShreeDattaKSK_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ShreeDattaKSK.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

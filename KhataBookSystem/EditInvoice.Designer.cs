@@ -41,7 +41,6 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
             this.txtinterst = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtbillno = new System.Windows.Forms.TextBox();
             this.txtamount = new System.Windows.Forms.TextBox();
@@ -84,6 +83,7 @@
             this.txtchequeamount = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.btnprivew = new System.Windows.Forms.Button();
+            this.ddcutomer = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -92,6 +92,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.ddcutomer);
             this.panel2.Controls.Add(this.dpcredit);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.btneditcancel);
@@ -103,7 +104,6 @@
             this.panel2.Controls.Add(this.Label2);
             this.panel2.Controls.Add(this.Label8);
             this.panel2.Controls.Add(this.txtinterst);
-            this.panel2.Controls.Add(this.txtName);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtbillno);
             this.panel2.Controls.Add(this.txtamount);
@@ -122,6 +122,7 @@
             this.dpcredit.Name = "dpcredit";
             this.dpcredit.Size = new System.Drawing.Size(200, 26);
             this.dpcredit.TabIndex = 5;
+            this.dpcredit.ValueChanged += new System.EventHandler(this.dpcredit_ValueChanged);
             // 
             // label15
             // 
@@ -237,15 +238,6 @@
             this.txtinterst.TabIndex = 3;
             this.txtinterst.TextChanged += new System.EventHandler(this.txtinterst_TextChanged);
             // 
-            // txtName
-            // 
-            this.txtName.Enabled = false;
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(151, 83);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(247, 26);
-            this.txtName.TabIndex = 1;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -283,6 +275,7 @@
             this.dpbill.Name = "dpbill";
             this.dpbill.Size = new System.Drawing.Size(200, 26);
             this.dpbill.TabIndex = 4;
+            this.dpbill.ValueChanged += new System.EventHandler(this.dpbill_ValueChanged);
             // 
             // label3
             // 
@@ -700,6 +693,16 @@
             this.btnprivew.UseVisualStyleBackColor = false;
             this.btnprivew.Click += new System.EventHandler(this.btnprivew_Click);
             // 
+            // ddcutomer
+            // 
+            this.ddcutomer.Enabled = false;
+            this.ddcutomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddcutomer.FormattingEnabled = true;
+            this.ddcutomer.Location = new System.Drawing.Point(151, 82);
+            this.ddcutomer.Name = "ddcutomer";
+            this.ddcutomer.Size = new System.Drawing.Size(233, 28);
+            this.ddcutomer.TabIndex = 164;
+            // 
             // EditInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -740,7 +743,6 @@
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label8;
         private System.Windows.Forms.TextBox txtinterst;
-        private System.Windows.Forms.TextBox txtName;
         internal System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtbillno;
         private System.Windows.Forms.TextBox txtamount;
@@ -783,5 +785,6 @@
         internal System.Windows.Forms.Label label21;
         private System.Windows.Forms.DateTimePicker dpinterst;
         private System.Windows.Forms.Button btnprivew;
+        private System.Windows.Forms.ComboBox ddcutomer;
     }
 }

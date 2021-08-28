@@ -29,7 +29,8 @@ G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.ap
 G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.exe.manifest
 G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.application
 G:\DESKTOP Projects\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csprojAssemblyReference.cache
-F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBook.accdb
+F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\ShreeDattaKSK.mdf
+F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\ShreeDattaKSK_log.ldf
 F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe.config
 F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe.manifest
 F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.application
@@ -37,6 +38,7 @@ F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.exe
 F:\.net\KhataBookSystem\KhataBookSystem\bin\Debug\KhataBookSystem.pdb
 F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.ResolveComReference.cache
 F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.EditInvoice.resources
+F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.NewCustomer.resources
 F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.PaymentDetails.resources
 F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.Form1.resources
 F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.NewInvoice.resources
@@ -48,4 +50,3 @@ F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.exe.manifest
 F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.application
 F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.exe
 F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.pdb
-F:\.net\KhataBookSystem\KhataBookSystem\obj\Debug\KhataBookSystem.csproj.AssemblyReference.cache

@@ -26,7 +26,11 @@ namespace KhataBookSystem.App_Code
             counter++;
         }
 
-        public int ID { set; get; }
+        public int CustomerID { set; get; }
+
+        public string address { set; get; }
+
+        public string contactno { set; get; }
         public string billno { set; get; }
 
         public DateTime billdate { set; get; }

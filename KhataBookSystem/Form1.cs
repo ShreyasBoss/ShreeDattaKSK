@@ -23,8 +23,18 @@ namespace KhataBookSystem
         private void Form1_Load(object sender, EventArgs e)
         {
             getdata();
+            getCustomerForDD();
         }
-       
+        public void getCustomerForDD()
+        {
+            BussinessLogic bl = BussinessLogic.GetInstance;
+            DataTable dt = new DataTable();
+            dt = bl.getCustomerDD();
+            ddcutomer.DataSource = dt;
+            ddcutomer.DisplayMember = "Name";
+            ddcutomer.ValueMember = "Id";
+        }
+
 
         private void btncancel_Click(object sender, EventArgs e)
         {
@@ -35,23 +45,7 @@ namespace KhataBookSystem
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            if (txtName.Text != string.Empty)
-            {
-                try
-                {
-                    BussinessLogic bl = BussinessLogic.GetInstance;
-                    UserInterface ui = UserInterface.GetInstance;
-                    DataTable dt = new DataTable();
-                    ui.Name = txtName.Text;
-                    dt = bl.GetBillDataByName(ui);
-                    grdBill.DataSource = dt;
-                }
-                catch (Exception a)
-                {
-                    a.ToString();
-                }
-            }
-            else if (txtbillno.Text != string.Empty)
+            if (txtbillno.Text != string.Empty)
             {
                 try
                 {
@@ -67,15 +61,15 @@ namespace KhataBookSystem
                     a.ToString();
                 }
             }
-            else if (dbill.Text != string.Empty)
+            else if (ddcutomer.Text != string.Empty)
             {
                 try
                 {
                     BussinessLogic bl = BussinessLogic.GetInstance;
                     UserInterface ui = UserInterface.GetInstance;
                     DataTable dt = new DataTable();
-                    ui.billdate = dbill.Value.Date;
-                    dt = bl.GetBillDataByBillDate(ui);
+                    ui.CustomerID = Convert.ToInt32(ddcutomer.SelectedValue);
+                    dt = bl.GetBillDataByName(ui);
                     grdBill.DataSource = dt;
                 }
                 catch (Exception a)
@@ -83,6 +77,8 @@ namespace KhataBookSystem
                     a.ToString();
                 }
             }
+         
+         
         }
 
         public void getdata()
@@ -138,5 +134,13 @@ namespace KhataBookSystem
             if (dataObj != null)
                 Clipboard.SetDataObject(dataObj);
         }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            NewCustomer nc = new NewCustomer();
+            nc.Show();
+        }
+
+      
     }
 }
